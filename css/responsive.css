@@ -30,6 +30,7 @@
         text-align: center;
         width: 31%;
         margin: 0 auto;
+        padding: 0;
     }
 
     .footer-link:hover:after {
@@ -50,6 +51,38 @@
 .ax-campo input[type="email"], 
 .ax-campo textarea, 
 .ax-campo select{
+    width: 100%;
+}
+    
+.content-raider {
+    padding: 2rem 1rem;
+}
+
+.reider-flex {
+    flex-direction: column;
+    height: auto;
+    margin: 0 0 2rem 0;
+}
+
+.reider-flex:nth-child(even) .reider-flex_text {
+    order: 2;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* overflow: initial; */
+}
+
+.reider-flex_img {
+    overflow: inherit;
+    height: initial;
+    width: 100%;
+}
+
+.reider-flex_img img {
+    height: auto;
+    object-fit: inherit;
+}
+
+.reider-flex_text {
     width: 100%;
 }
 

@@ -108,7 +108,25 @@ img {
     padding: 7px 0;
     backdrop-filter: blur(12px);
 }
-
+.logo {
+	animation-duration: 5s;
+	animation-name: animacionLogo;
+	animation-iteration-count: infinite;
+  }
+@keyframes animacionLogo{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+	}
+  50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+	} 
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+		}
+}
 .logo img {
     width: 50%;
 }
@@ -405,4 +423,92 @@ fieldset {
     background: #65656573;
     border: 1px solid #fff;
     box-shadow: -4px 10px 20px 0px #ffffff59;
+}
+/*RAIDERS*/
+
+
+.reider-flex {
+    display: flex;
+    height: 448px;
+    align-content: stretch;
+    gap: 2rem;
+}
+
+.reider-flex_img {
+    width: 60%;
+    height: 78%;
+    overflow: hidden;
+}
+
+.reider-flex_img img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.content-raider {
+    padding: 2rem 8rem;
+}
+
+.reider-flex_text {
+    width: 68%;
+}
+
+.reider-flex_text h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.reider-flex_text p {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.reider-flex_text_btn {
+    width: max-content;
+    display: block;
+    /* background: red; */
+    padding: 0.5rem 4rem;
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 40px;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+    /* z-index: 1; */
+}
+
+.reider-flex_text_btn:before {
+    content: "";
+    width: 0;
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    z-index: -1;
+    background: linear-gradient(90deg, rgb(0 0 0) 3%, rgba(107,10,9,1) 44%, rgba(238,39,9,0.8883928571428571) 100%);
+}
+
+.reider-flex_text_btn:hover:before {
+    width: 100%;
+}
+
+h1.titulo-pg-raiders {
+    font-size: 40px;
+    text-align: center;
+    color: #b41b09;
+    text-shadow: 1px 1px 2px #fff;
+    margin: 0rem 0 2rem 0;
+}
+
+.reider-flex:nth-child(even) .reider-flex_img {
+    order: 2;
 }

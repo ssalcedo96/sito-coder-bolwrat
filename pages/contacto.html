@@ -5,9 +5,14 @@
     <title>Bolwratt</title>
     <link rel="icon" type="img/favicon.ico" href="img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <meta name="title" content="contacto">
+    <meta name="description" content="sito de skatebording dedicado a mostrar la cultura de el skate en medellin">
+    <meta name="keywords" content="skater,skatebording,medellin,deporte">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -15,33 +20,33 @@
 <body>
     <header class="container">
         <div class="logo">
-            <a href="index.html"> 
-                <img src="img/logo.png" alt="">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="">
             </a>
         </div>
         <div class="row contenedor-menu-redes">
             <div class="col-md-8">
                 <nav class="menu">
                     <ul>
-                        <li class="menu-item"><a class="menu-link" href="viedos.html">video</a> </li>
-                        <li class="menu-item"><a class="menu-link" href="tienda.html"> tiendas</a></li>
-                        <li class="menu-item"><a class="menu-link activo" href="contacto.html">contacto</a> </li>
-                        <li class="menu-item"><a class="menu-link" href="#">eventos</a> </li>
+                        <li class="menu-item"><a class="menu-link" href="../pages/viedos.html">video</a> </li>
+                        <li class="menu-item"><a class="menu-link" href="../pages/tienda.html"> tiendas</a></li>
+                        <li class="menu-item"><a class="menu-link" href="../pages/contacto.html">contacto</a> </li>
+                        <li class="menu-item"><a class="menu-link" href="../pages/patinadores.html">raiders</a> </li>
                     </ul>
                 </nav>
             </div>
             <div class="col-md-4 contenedor-redes">
                 <ul>
-                    <li><a href=""><img src="img/yt-icon.png" alt=""></a></li>
-                    <li><a href=""><img src="img/fb-icon.png" alt=""></a></li>
-                    <li><a href=""><img src="img/ins-icon.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/yt-icon.png" alt="icono youtube" title="icono redes sociales youtube"></a></li>
+                    <li><a href=""><img src="../img/fb-icon.png" alt="icono faceboock" title="icono redes sociales faceboock"></a></li>
+                    <li><a href=""><img src="../img/ins-icon.png" alt="icono instagram" title="icono redes sociales instagram"></a></li>
                 </ul>
             </div>
         </div>
     </header>
     
     <section class="content-boletin ">
-        <form action="" class="ax-form row container center">
+        <form action="" class="ax-form row container center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="content-info-form">
                 <h2>Contactate con nosotros</h2>
                 <p>Contactate con nosotros para poder resolver tus dudas sobre nuestros productos y eventos que <span>Bolwratt</span> tiene para ti</p>
@@ -112,17 +117,17 @@
         </form>
     </section>
 
-    <footer class="row container center">
+     <footer class="row container center">
         <div class="col-md-6 logo-footer">
-            <img src="img/logo-footer.png" alt="">
+            <img src="../img/logo-footer.png" alt="logo Bolwratt" alt="logo  colectivo skate Bolwratt">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
             </p>
             <div class=" center contenedor-redes">
                 <ul>
-                    <li><a href=""><img src="img/yt-icon.png" alt=""></a></li>
-                    <li><a href=""><img src="img/fb-icon.png" alt=""></a></li>
-                    <li><a href=""><img src="img/ins-icon.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/yt-icon.png" alt="icono youtube" title="icono redes sociales youtube"></a></li>
+                    <li><a href=""><img src="../img/fb-icon.png" alt="icono faceboock" title="icono redes sociales faceboock"></a></li>
+                    <li><a href=""><img src="../img/ins-icon.png" alt="icono instagram" title="icono redes sociales instagram"></a></li>
                 </ul>
             </div>
 
@@ -150,6 +155,7 @@
         </di>
         <di class="col-md-2">
             <h3>Lorem</h3>
+
             <ul class="nav-footer">
                 <li class="nav-footer-item">
                     <a class="footer-link" href="#">Lorem ipsum </a>
@@ -181,11 +187,16 @@
                 <li class="nav-footer-item">
                     <a class="footer-link" href="#">Lorem ipsum </a>
                 </li>
+
             </ul>
         </di>
     </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
 </html>
